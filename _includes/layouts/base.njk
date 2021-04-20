@@ -4,7 +4,17 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <h1>{{ title }}</h1>
+    <h1>Welcome to the Skagenda</h1>
+
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About us</a></li>
+        <li><a href="/events/">Agenda</a></li>
+      </ul>
+    </nav>
+
+    <h2>{{ title }}</h2>
     {{ content | safe }}
   </body>
 </html>
