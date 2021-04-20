@@ -1,0 +1,11 @@
+<ul>
+  {% for event in eventslist %}
+    <li>
+      <strong>
+        <a href="{{ event.url | url }}">{{ event.data.title }}</a>
+      </strong>
+      -
+      <span>{{ event.data.description }}</span>
+    </li>
+  {% endfor %}
+</ul>
