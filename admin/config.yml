@@ -9,6 +9,7 @@ collections:
   - name: "events"
     label: "Events"
     folder: "events"
+    create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/event.njk" }
