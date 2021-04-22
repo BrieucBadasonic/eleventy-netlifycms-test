@@ -4,17 +4,20 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <h1>Welcome to the Skagenda</h1>
+  <div class="navbar">
+    <div class="navbar-logo-container">
+      <img class ="navbar-logo" src="/images/uploads/logo.png" alt="logo">
+    </div>
+    <div class="navbar-link-container">
+      <a href="/">Home</a>
+      <a href="/about/">About us</a>
+      <a href="/events/">Agenda</a>
+    </div>
+  </div>
 
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about/">About us</a></li>
-        <li><a href="/events/">Agenda</a></li>
-      </ul>
-    </nav>
-
+  <div class="main">
     <h2>{{ title }}</h2>
     {{ content | safe }}
+  </div>
   </body>
 </html>

@@ -1,13 +1,14 @@
 <ul>
   {% for event in eventslist %}
     <li>
-      <strong>
-        <a href="{{ event.url | url }}">{{ event.data.title }}</a>
-      </strong>
-      -
-      <span>{{ event.data.description }}</span>
-      -
-      <span>{{ event.data.date}}</span>
+      <div class="card-product">
+         <img src="{{ event.data.featuredImage | url }}" alt="{{ event.data.featuredImage }}" />
+          <div class="card-product-infos">
+            <a href="{{ event.url | url }}">{{ event.data.title }}</a>
+            <span>{{ event.data.description }}</span>
+            <span>{{ event.data.date}}</span>
+          </div>
+        </div>
     </li>
   {% endfor %}
 </ul>
