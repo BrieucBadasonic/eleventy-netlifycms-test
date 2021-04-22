@@ -17,4 +17,4 @@ collections:
       - { labek: "Description", name: "description", widget: "string" }
       - { label: "Date", name: "date", widget: "date" }
       - { label: "Event Body", name: "body", widget: "markdown" }
-      - { label: "Featured Image", name: "featuredImage", widget: "image" }
+      - { label: Featured Image", name: "featuredImage", widget: "image" }
