@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "_site/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "events"
+    label: "Events"
+    folder: "events"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/event.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { labek: "Description", name: "description", widget: "string" }
+      - { label: "Date", name: "date", widget: "date" }
+      - { label: "Event Body", name: "body", widget: "markdown" }
+      - { label: Featured Image", name: "featuredImage", widget: "image" }
